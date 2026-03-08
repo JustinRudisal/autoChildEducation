@@ -9,5 +9,5 @@
  ACE_SKIP_PRODIGY_TT: "Skip prodigies and gifted - they cap stats regardless"
  ACE_EXCLUDE: "Exclude:"
  ACE_RUN_NOW: "Run Now"
- ACE_RUN_NOW_TT: "Immediately process all eligible children. Check game.log for results."
- ACE_RUN_NOW_HINT: "(check game.log for results)"
+ ACE_RUN_NOW_TT: "Immediately re-processes all eligible children and resets any children previously skipped."
+ ACE_RUN_NOW_HINT: "(re-checks all eligible children)"
