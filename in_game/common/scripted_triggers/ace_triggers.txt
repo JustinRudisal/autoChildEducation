@@ -21,11 +21,11 @@ ace_should_auto_educate_child = {
 	# Must be a child (is_child was removed in 1.1, replaced with is_adult = no)
 	is_adult = no
 	
-	# Must have child trait revealed (age 3+) - this is what select_best_child_education_trait_based uses
-	ace_has_child_trait = yes
-	
 	# Skip if we've already processed this child
 	NOT = { has_variable = ace_processed }
+
+	# Must have child trait revealed (age 3+) - this is what select_best_child_education_trait_based uses
+	ace_has_child_trait = yes
 	
 	# Never touch expensive education
 	NOT = { has_child_education = expensive_in_depth_education }
