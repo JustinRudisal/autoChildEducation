@@ -18,8 +18,8 @@ ace_has_child_trait = {
 # Helper trigger to check if a child should be auto-educated
 # Scope: character (the child)
 ace_should_auto_educate_child = {
-	# Must be a child
-	is_child = yes
+	# Must be a child (is_child was removed in 1.1, replaced with is_adult = no)
+	is_adult = no
 	
 	# Must have child trait revealed (age 3+) - this is what select_best_child_education_trait_based uses
 	ace_has_child_trait = yes
