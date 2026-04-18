@@ -1,9 +1,9 @@
-﻿{
-	"name":	"Auto Child Education",
-	"id":	"autoce.mymod",
-	"version":	"2.3",
+{
+	"name":	"Auto Child Education (1.1.10)",
+	"id":	"autoce_1_1_fix.justinrudisal",
+	"version":	"2.4",
 	"supported_game_version":	"1.1.*",
-	"short_description":	"Automatically selects the best education for children based on their aptitudes. Settings in education screen.",
+	"short_description":	"Stop-gap update of Auto Child Education by victoriaposting (https://steamcommunity.com/id/victoriaposting) for EU5 1.1.x compatibility.\n\nv2.4: Updated for 1.1.10. Added option to auto-assign expensive in-depth education to heirs and crown estate children. Improved performance by short-circuiting AI countries at the on_action level.\n\nAll credit to victoriaposting for the original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=3607293096",
 	"tags":	["Gameplay", "Utilities"],
 	"relationships":	[],
 	"game_custom_data":	{

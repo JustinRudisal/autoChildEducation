@@ -1,13 +1,16 @@
-﻿# Auto Child Education - Select best education based on child's modifiers
-# Version 2.0 - Rewritten for EU5 1.0.9+ compatibility
-
-# Main effect: assigns the optimal education based on the child's stat modifiers
-# Never downgrades expensive education. Optional excludes (heirs, prodigy/gifted,
-# crown estate) are handled by settings toggles in ace_should_auto_educate_child.
-select_best_child_education_trait_based = {
-	# NEVER change expensive education once set
+﻿select_best_child_education_trait_based = {
 	if = {
 		limit = { has_child_education = expensive_in_depth_education }
+	}
+	else_if = {
+		limit = {
+			owner = { has_variable = ace_use_expensive }
+			OR = {
+				is_heir = yes
+				has_estate = estate_type:crown_estate
+			}
+		}
+		set_child_education = child_education:expensive_in_depth_education
 	}
 	else = {
 		# Save current modifiers

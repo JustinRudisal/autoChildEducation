@@ -45,7 +45,21 @@ ace_toggle_skip_prodigy = {
 	}
 }
 
-# Run Now: Immediately process all eligible children
+# Toggle: Use expensive education for heirs and crown estate children
+ace_toggle_use_expensive = {
+	scope = country
+
+	effect = {
+		if = {
+			limit = { has_variable = ace_use_expensive }
+			remove_variable = ace_use_expensive
+		}
+		else = {
+			set_variable = ace_use_expensive
+		}
+	}
+}
+
 ace_run_now = {
 	scope = country
 

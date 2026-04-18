@@ -1,7 +1,6 @@
-﻿# Auto Child Education v2.3 - Monthly pulse with "processed" marker
+﻿# Auto Child Education v2.4 - Monthly pulse with "processed" marker
 # Only processes children with revealed traits (age 3+)
 # Children are marked once processed, so monthly checks get faster over time
-# every_character already covers dynasty members owned by this country, no separate dynasty loop needed
 
 monthly_country_pulse = {
 	on_actions = {
@@ -10,27 +9,21 @@ monthly_country_pulse = {
 	}
 }
 
-# Monthly check for unprocessed children only
 ace_monthly_check = {
+	trigger = {
+		is_ai = no
+		NOT = { has_variable = ace_disabled }
+	}
 	effect = {
-		# Only run for human players who have auto-education enabled
-		if = {
-			limit = { 
-				is_ai = no 
-				NOT = { has_variable = ace_disabled }
+		every_character = {
+			limit = {
+				ace_should_auto_educate_child = yes
 			}
-			# Check all characters owned by this country
-			every_character = {
-				limit = {
-					ace_should_auto_educate_child = yes
-				}
-				select_best_child_education_trait_based = yes
-				# Mark as processed only if they have revealed traits
-				if = {
-					limit = { ace_has_child_trait = yes }
-					set_variable = ace_processed
-				}
+			select_best_child_education_trait_based = yes
+			if = {
+				limit = { ace_has_child_trait = yes }
+				set_variable = ace_processed
 			}
-}
+		}
 	}
 }
