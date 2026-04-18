@@ -37,6 +37,6 @@ Open any child's education selection screen to find the Auto Education panel:
 
 ## Links
 
-- Workshop (this fork): https://steamcommunity.com/sharedfiles/filedetails/?id=3607293096
+- Workshop (this fork): https://steamcommunity.com/sharedfiles/filedetails/?id=3681510822
 - Workshop (original): https://steamcommunity.com/sharedfiles/filedetails/?id=3607293096
 - GitHub (original): https://github.com/victoria-riley-barnett/autoChildEducation
