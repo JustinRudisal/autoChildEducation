@@ -3,6 +3,9 @@
 		limit = { has_child_education = expensive_in_depth_education }
 	}
 	else_if = {
+		limit = { has_child_education = orthodox_education }
+	}
+	else_if = {
 		limit = {
 			owner = { has_variable = ace_use_expensive }
 			OR = {
@@ -51,6 +54,12 @@
 			save_temporary_scope_value_as = { name = base_adm value = { value = scope:curr_adm subtract = 0.5 } }
 			save_temporary_scope_value_as = { name = base_dip value = { value = scope:curr_dip subtract = 0.5 } }
 			save_temporary_scope_value_as = { name = base_mil value = { value = scope:curr_mil subtract = 0.5 } }
+		}
+		else_if = {
+			limit = { has_child_education = orthodox_education }
+			save_temporary_scope_value_as = { name = base_adm value = { value = scope:curr_adm subtract = 0.8 } }
+			save_temporary_scope_value_as = { name = base_dip value = { value = scope:curr_dip subtract = 0.8 } }
+			save_temporary_scope_value_as = { name = base_mil value = { value = scope:curr_mil subtract = 0.8 } }
 		}
 		else = {
 			# No education yet, use raw modifiers

@@ -118,9 +118,19 @@
 													}
 													blockoverride "field_highlight" {}
 												}
+
+												card_stringpair_list = {
+													visible = "[Not(StringIsEmpty(ChildEducationCandidate.GetOnStartEffectTooltip))]"
+													textcontext =  "[ChildEducationCandidate.GetOnStartEffectTooltip]"
+
+													blockoverride "block_title" {
+														text = "CHILD_EDUCATION_ON_START_EFFECT"
+													}
+													blockoverride "field_highlight" {}
+												}
 											}
 
-											blockoverride "bg_color" { 
+											blockoverride "bg_color" {
 												using = color_mid_green_texture
 											}
 										}

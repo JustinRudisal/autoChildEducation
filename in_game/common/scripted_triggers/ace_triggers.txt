@@ -9,6 +9,7 @@ ace_should_auto_educate_child = {
 	NOT = { has_variable = ace_processed }
 	ace_has_child_trait = yes
 	NOT = { has_child_education = expensive_in_depth_education }
+	NOT = { has_child_education = orthodox_education }
 
 	trigger_if = {
 		limit = { owner = { has_variable = ace_skip_heirs } }
