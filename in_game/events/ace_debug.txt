@@ -29,7 +29,6 @@ ace_debug.1 = {
 				father = scope:father
 				dynasty = root.ruler.dynasty
 				estate = estate_type:crown_estate
-				save_scope_as = target_character
 			}
 		}
 		else = {
@@ -39,10 +38,9 @@ ace_debug.1 = {
 				mother = scope:mother
 				dynasty = root.ruler.dynasty
 				estate = estate_type:crown_estate
-				save_scope_as = target_character
 			}
 		}
-		scope:target_character = {
+		last_created_character = {
 			add_trait = trait:child_intelligent
 			move_country = root
 		}
@@ -58,7 +56,6 @@ ace_debug.1 = {
 				father = scope:father
 				dynasty = root.ruler.dynasty
 				estate = estate_type:crown_estate
-				save_scope_as = target_character
 			}
 		}
 		else = {
@@ -68,10 +65,9 @@ ace_debug.1 = {
 				mother = scope:mother
 				dynasty = root.ruler.dynasty
 				estate = estate_type:crown_estate
-				save_scope_as = target_character
 			}
 		}
-		scope:target_character = {
+		last_created_character = {
 			add_trait = trait:child_gregarious
 			move_country = root
 		}
@@ -87,7 +83,6 @@ ace_debug.1 = {
 				father = scope:father
 				dynasty = root.ruler.dynasty
 				estate = estate_type:crown_estate
-				save_scope_as = target_character
 			}
 		}
 		else = {
@@ -97,10 +92,9 @@ ace_debug.1 = {
 				mother = scope:mother
 				dynasty = root.ruler.dynasty
 				estate = estate_type:crown_estate
-				save_scope_as = target_character
 			}
 		}
-		scope:target_character = {
+		last_created_character = {
 			add_trait = trait:child_prodigy
 			move_country = root
 		}
@@ -116,7 +110,6 @@ ace_debug.1 = {
 				father = scope:father
 				dynasty = root.ruler.dynasty
 				estate = estate_type:crown_estate
-				save_scope_as = target_character
 			}
 		}
 		else = {
@@ -126,10 +119,9 @@ ace_debug.1 = {
 				mother = scope:mother
 				dynasty = root.ruler.dynasty
 				estate = estate_type:crown_estate
-				save_scope_as = target_character
 			}
 		}
-		scope:target_character = {
+		last_created_character = {
 			add_trait = trait:child_rowdy
 			move_country = root
 		}
