@@ -1,9 +1,9 @@
 {
-	"name":	"Auto Child Education (1.2)",
+	"name":	"Auto Child Education",
 	"id":	"autoce_1_1_fix.justinrudisal",
-	"version":	"2.5",
-	"supported_game_version":	"1.2.*",
-	"short_description":	"Stop-gap update of Auto Child Education by victoriaposting (https://steamcommunity.com/id/victoriaposting) for EU5 1.2.x compatibility.\n\nv2.5: Updated for 1.2. Added compatibility with Orthodox Education (Fate of the Phoenix DLC). GUI now shows on-start effect tooltips for DLC educations.\n\nAll credit to victoriaposting for the original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=3607293096",
+	"version":	"2.6",
+	"supported_game_version":	"1.3.*",
+	"short_description":	"Stop-gap update of Auto Child Education by victoriaposting for EU5 1.3.x compatibility. Every month, each child is automatically assigned the education matching their highest aptitude. All credit to victoriaposting for the original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=3607293096",
 	"tags":	["Gameplay", "Utilities"],
 	"relationships":	[],
 	"game_custom_data":	{
